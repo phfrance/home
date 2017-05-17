@@ -99,52 +99,89 @@
               -ms-transform: translate(-50%, -50%);
           }
       </style>
+      <!--Sub Container-->
+      <style type = "text/css">
+          body {
+              -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                 -khtml-user-select: none; /* Konqueror HTML */
+                   -moz-user-select: none; /* Firefox */
+                    -ms-user-select: none; /* Internet Explorer/Edge */
+                        user-select: none; /* Non-prefixed version, currently
+                                              supported by Chrome and Opera */
+          }
+          #main-title {
+              font-family: "Montserrat";
+              color: rgba(0,0,0,0.83);
+              font-size: 24px;
+              font-weight: 300;
+              margin-top: 2%;
+              margin-left: 2%;
+              border-bottom: 1px solid rgba(0,0,0,0.83);
+              margin-right: 40px;
+              padding-bottom: 5px;
+          }
+          #main-description {
+              font-family: "Roboto";
+              color: rgba(0,0,0,0.83);
+              font-size: 16px;
+              font-weight: 300;
+              margin-top: 2%;
+              margin-left: 2%;
+              margin-right: 2%;
+          }
+      </style>
   </head>
   
   <body>
+      <center>
+          
+          <img src = "http://www.pngall.com/wp-content/uploads/2016/06/France-Flag-PNG-File.png" width = "15%" height = "26%" style = "position: fixed; right: 42%; top: 0%;" draggable = "false">
+          <img src = "https://s3.amazonaws.com/files.enjin.com/1380030/new%20flag2.png" width = "45%" height = "20%" style = "margin-top: 15px;" draggable = "false">
+      </center>
         <div id = "main-container">
-            <span id = "image-container-1">
-                <img src = "https://static.pexels.com/photos/6372/coffee-smartphone-desk-pen.jpg" width = "25%">
+            <span id = "image-container-1" onmouseover = "about();">
+                <img src = "https://static.pexels.com/photos/6372/coffee-smartphone-desk-pen.jpg" width = "25%" draggable = "false">
                 <div class = "overlay" style = "margin-left: 10px; margin-top: 10px;">
                     <div class = "text">
                         About
                     </div>
                 </div>
             </span>
-            <span id = "image-container-2">
-                <img src = "https://files-cloud.enjin.com/1380030/module_gallery/full/2830847.jpg" width = "25%" height = "44%">
+            <span id = "image-container-2" onmouseover = "military();">
+                <img src = "https://files-cloud.enjin.com/1380030/module_gallery/full/2830847.jpg" width = "25%" height = "44%" draggable = "false">
                 <div class = "overlay" style = "left: 26.6%; padding-left: 1px; margin-top: 10px;">
                     <div class = "text">
                         Military
                     </div>
                 </div>
             </span>
-            <span id = "image-container-3">
-                <img src = "http://themarketinginsight.com/wp-content/uploads/15-best-websites-for-entrepreneurs.png" width = "25%">
+            <span id = "image-container-3" onmouseover = "elections();">
+                <img src = "http://themarketinginsight.com/wp-content/uploads/15-best-websites-for-entrepreneurs.png" width = "25%" draggable = "false">
                 <div class = "overlay" style = "left: 51.9%; margin-top: 10px;">
                     <div class = "text">
                         Elections
                     </div>
                 </div>
             </span><br>
-            <span id = "image-container-4">
-                <img src = "http://creativewebdesigns.ca/wp-content/uploads/2012/05/creative-web-designs-background1.jpg" width = "25%">
+            <span id = "image-container-4" onmouseover = "community();">
+                <img src = "http://creativewebdesigns.ca/wp-content/uploads/2012/05/creative-web-designs-background1.jpg" width = "25%" draggable = "false">
                 <div class = "overlay" style = "top: 44%; margin-top: 11px; margin-left: 10px;">
                     <div class = "text">
                         Community
                     </div>
                 </div>
             </span>
-            <span id = "image-container-5">
-                <img src = "http://4vector.com/i/free-vector-gallery-show-background-03-vector_017002_3.jpg" width = "25%">
+            <span id = "image-container-5" onmouseover = "gallery();">
+                <img src = "http://4vector.com/i/free-vector-gallery-show-background-03-vector_017002_3.jpg" width = "25%" draggable = "false">
                 <div class = "overlay" style = "top: 44%; left: 26.6%; padding-left: 1px; margin-top: 11px;">
                     <div class = "text">
                         Gallery
                     </div>
                 </div>
             </span>
-            <span id = "image-container-6">
-                <img src = "https://static.vecteezy.com/system/resources/previews/000/094/210/non_2x/vector-read-more-icon-pack.jpg" width = "25%">
+            <span id = "image-container-6" onmouseover = "more();">
+                <img src = "https://static.vecteezy.com/system/resources/previews/000/094/210/non_2x/vector-read-more-icon-pack.jpg" width = "25%" draggable = "false">
                 <div class = "overlay" style = "top: 44%; left: 51.9%; margin-top: 11px;">
                     <div class = "text">
                         More
@@ -153,7 +190,40 @@
             </span>
         </div>
         <div id = "sub-container">
-            
+            <div id = "main-title">
+                Welcome to France: Persistent History!
+            </div>
+            <div id = "main-description">
+                Welcome, Guest.
+            </div>
         </div>
+        <script type = "text/javascript">
+            var maintitle = document.getElementById("main-title");
+            var maindescription = document.getElementById("main-description");
+            function about () {
+                maintitle.innerHTML = "Discover:";
+                maindescription.innerHTML = "Discover France in this descriptive summary about the nation, the country and our website, as well as past events or history.";
+            }
+            function military () {
+                maintitle.innerHTML = "Military:";
+                maindescription.innerHTML = "France is generally revered as a superpower. It's manpower, combined with it's tactics allow France to win wars, usually. Click to Enlist now!"
+            }
+            function elections () {
+                maintitle.innerHTML = "Elections:";
+                maindescription.innerHTML = "Did you know that France is a democracy? No? Well, if you're a French Citizen, you are eligible to vote! View and vote in current elections here before polls close!";
+            }
+            function community () {
+                maintitle.innerHTML = "Community:";
+                maindescription.innerHTML = "Talk with Frenchmen and French officials on this forum here, as well as roleplay and applications for the current government.";
+            }
+            function gallery () {
+                maintitle.innerHTML = "Gallery:";
+                maindescription.innerHTML = "View France's natural and synthetic beauty through this gallery submitted by citizens.";
+            }
+            function more () {
+                maintitle.innerHTML = "More:";
+                maindescription.innerHTML = "Is there more? Of course! Click here to view additional pages not listed here.";
+            }
+        </script>
   </body>
 </html>
