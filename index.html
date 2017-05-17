@@ -7,11 +7,153 @@
       <meta desc = "A website for France on the Minecraft Server Persistent History.">
       <!--Import Fonts-->
       <style type = "text/css">
+          @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Slabo+27px');            
+            @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+            @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+
       </style>
       <!--Import Libraries-->
       <!--Body CSS-->
+      <style type = "text/css">
+          body {
+              background-image: url("https://s30.postimg.org/xanrk7xvl/imageedit_1_5124407444.jpg");
+              background-repeat: none;
+              background-attachment: fixed;
+              background-size: cover;
+              user-select: none;
+              cursor: default;
+          }
+          #main-container {
+              background-color: rgba(150,150,150,0.7);
+              width: 50%;
+              height: 40%;
+              position: fixed;
+              top: 25%;
+              left: 25%;
+              padding-left: 10px;
+              padding-top: 10px;
+          }
+          #main-container img:hover {
+              cursor: pointer;
+          }
+          #main-container img {
+              margin: 0px;
+              min-height: 44%;
+              min-width: 25%;
+              max-height: 44%;
+          }
+          #sub-container {
+              background-color: rgba(255,255,255,0.7);
+              width: 50%;
+              height: 20%;
+              position: fixed;
+              top: 67.5%;
+              left: 25%;
+              padding-left: 10px;
+          }
+          .overlay {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 42.5%;
+              width: 24.6%;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: rgba(50,50,50,0.7);
+          }
+          .overlay:hover {
+              cursor: pointer;
+          }
+            
+          #image-container-1:hover .overlay {
+              opacity: 1;
+          }
+          #image-container-2:hover .overlay {
+              opacity: 1;
+          }
+          #image-container-3:hover .overlay {
+              opacity: 1;
+          }
+          #image-container-4:hover .overlay {
+              opacity: 1;
+          }
+          #image-container-5:hover .overlay {
+              opacity: 1;
+          }
+          #image-container-6:hover .overlay {
+              opacity: 1;
+          }
+          
+          .text {
+              font-family: "Roboto";
+              font-weight: 300;
+              text-decoration: underline;
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+          }
+      </style>
   </head>
+  
   <body>
-    Test
+        <div id = "main-container">
+            <span id = "image-container-1">
+                <img src = "https://static.pexels.com/photos/6372/coffee-smartphone-desk-pen.jpg" width = "25%">
+                <div class = "overlay" style = "margin-left: 10px; margin-top: 10px;">
+                    <div class = "text">
+                        About
+                    </div>
+                </div>
+            </span>
+            <span id = "image-container-2">
+                <img src = "https://files-cloud.enjin.com/1380030/module_gallery/full/2830847.jpg" width = "25%" height = "44%">
+                <div class = "overlay" style = "left: 26.6%; padding-left: 1px; margin-top: 10px;">
+                    <div class = "text">
+                        Military
+                    </div>
+                </div>
+            </span>
+            <span id = "image-container-3">
+                <img src = "http://themarketinginsight.com/wp-content/uploads/15-best-websites-for-entrepreneurs.png" width = "25%">
+                <div class = "overlay" style = "left: 51.9%; margin-top: 10px;">
+                    <div class = "text">
+                        Elections
+                    </div>
+                </div>
+            </span><br>
+            <span id = "image-container-4">
+                <img src = "http://creativewebdesigns.ca/wp-content/uploads/2012/05/creative-web-designs-background1.jpg" width = "25%">
+                <div class = "overlay" style = "top: 44%; margin-top: 11px; margin-left: 10px;">
+                    <div class = "text">
+                        Community
+                    </div>
+                </div>
+            </span>
+            <span id = "image-container-5">
+                <img src = "http://4vector.com/i/free-vector-gallery-show-background-03-vector_017002_3.jpg" width = "25%">
+                <div class = "overlay" style = "top: 44%; left: 26.6%; padding-left: 1px; margin-top: 11px;">
+                    <div class = "text">
+                        Gallery
+                    </div>
+                </div>
+            </span>
+            <span id = "image-container-6">
+                <img src = "https://static.vecteezy.com/system/resources/previews/000/094/210/non_2x/vector-read-more-icon-pack.jpg" width = "25%">
+                <div class = "overlay" style = "top: 44%; left: 51.9%; margin-top: 11px;">
+                    <div class = "text">
+                        More
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div id = "sub-container">
+            
+        </div>
   </body>
 </html>
